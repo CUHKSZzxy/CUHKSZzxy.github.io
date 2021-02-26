@@ -1,128 +1,47 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="en">
-<head><meta name="generator" content="Hexo 3.9.0">
+<html lang="en">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="A place for programming and for fun ~">
+  <meta name="description" content="A place for programming and for fun ~">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hogwarts">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Hogwarts">
 <meta property="og:description" content="A place for programming and for fun ~">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Zhou Xinyu">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hogwarts">
-<meta name="twitter:description" content="A place for programming and for fun ~">
+
+<link rel="canonical" href="http://yoursite.com/">
 
 
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'en'
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/">
-
-
-
-
 
   <title>Hogwarts</title>
   
@@ -132,165 +51,209 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hogwarts</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-      
-        <p class="site-subtitle">zxy's personal website</p>
-      
   </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hogwarts</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">zxy's personal website</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
   </div>
 </div>
 
+
+
+
 <nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            Home
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            Archives
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
 
-  
+  </li>
+  </ul>
 </nav>
 
 
 
- </div>
+
+</div>
     </header>
 
-    <main id="main" class="main">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content index posts-expand">
             
-  <section id="posts" class="posts-expand">
-    
       
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/25/just-something-to-say/">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/themepicture.jpeg">
+      <meta itemprop="name" content="Zhou Xinyu">
+      <meta itemprop="description" content="A place for programming and for fun ~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hogwarts">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/25/just-something-to-say/" class="post-title-link" itemprop="url">Just something to say</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-02-25 20:27:00 / Modified: 21:35:33" itemprop="dateCreated datePublished" datetime="2021-02-25T20:27:00+08:00">2021-02-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Just-as-the-title-goes-sth-to-say-to-myself"><a href="#Just-as-the-title-goes-sth-to-say-to-myself" class="headerlink" title="Just as the title goes, sth to say to myself"></a>Just as the title goes, sth to say to myself</h2><h3 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h3><p>It has been a long time since my last post.How time flies, now I am a third year student, struggling for the undetermined future.Just an hour ago, I looked the blogs of two classmates, who are for sure excellent in our college.They have clear goals, their favorite fields of CS, either research or frontend design. I used to consider myself as a “thoughtful” person majored in computer science.However, after three years college study, something has escaped from my life without my attention.</p>
+<p>Frankly speaking, I was touched and cannot help thinking about my own life,<br>what I have done? what should I do? what will I do?</p>
+<h3 id="Continue"><a href="#Continue" class="headerlink" title="Continue"></a>Continue</h3><p>With excitement and passion, when I first created this blog system in 2019, I was quite confident about the future. I started to learn every new things that could encounter in courses. Machine learning, jupyter notebook, tensorflow, pytorch, latex, regular expression …</p>
+<p>Although recalling what I have learnt by myself, they are just “nothing” (yes, maybe just nothing) for a programmer, the process is of great satisfaction to me. Nothing seems difficult once I decided to learn.</p>
+<h3 id="However"><a href="#However" class="headerlink" title="However"></a>However</h3><p>Later on, I realized the gap between me and those excellent students, which cannot be filled simply by things called “diligence”. What I have known is far less than what I still need to mater.</p>
+<p>During the past three years, I have devoted myself to study and research. However, not as expected in most “dogmatic” story, I didn’t get outstanding scores.</p>
+<p>Due to myself or the course design of our school, up till now, I still feel that I am not a “true programmer”.<br>I am eager for experience, no matter “coding experience, learning experience, working experience, project experience”. I think I am lack of enough practice and I am indeed a lazy guy, which makes me painful.</p>
+<p>The epidemic exposes my weakness and mess up my plans. Year two is quite a hard academic year for me. Witnessing people around working hard, I seems to be trapped in a pitfall, keep static and cannot step forward. I did try my best to develop self-discipline and spare no effort to learning. Whereas, due to my personal reason, I found nothing truly interesting for me.<br>Coding, machine learning, algorithms, what I am happy about is not these stuffs (though they are good to me and at least I do non hate them).</p>
+<p>Sometimes, I reckon myself as a boring person, who have no big dreams, no true interests, no one to share my ideas. I keep a regular life routine unchanged for almost two years. Get up, go to lectures, eat lunch, go to lectures, study in the library until late, take a shower, sleep. Go to the gym every other day to keep myself healthy. I just write down these things for myself. Even from my perspective, this kind of life is boring. I cannot truly love sth consistently, even though they can attract my attention for a moment. Maybe that’s the reason…</p>
+<p>Therefore, no wonder I am perplexed about my future.<br>Setting up clear goals is always hard for me, though I am not saying to give up.</p>
+<h3 id="And"><a href="#And" class="headerlink" title="And"></a>And</h3><p>Anyway, this college is not an ideal place for me, for I am kinda timid. It belongs to those who are brave and clear about their goals. Not to blame CS major or our school, I have to say CS major is still an optimal choice in contemporary society and I do not regret choosing this. Our school is good, with good facilities, some good professors, some good students, anyway, maybe not that suitable for person of my type.</p>
+<h3 id="End"><a href="#End" class="headerlink" title="End"></a>End</h3><p>When writing this blog, I still have three homeworks, research project, group project to finish. And I am working hard to prepare CV and pursue an intern.</p>
+<p>Despite the heavy burden, I still want to write down sth, which is important for the “real me”.</p>
+<p>Emotions should have one place to go, this blog could be a wonderful place. Though complaining about so much things, I think I still have the courage and perseverance to continue working hard.</p>
+<p>Never give up yourself. Keep going is the best choice for me.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
   
 
+      
   
   
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/29/python-tricks-collection/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhou Xinyu">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/themepicture.jpeg">
+      <meta itemprop="name" content="Zhou Xinyu">
+      <meta itemprop="description" content="A place for programming and for fun ~">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Hogwarts">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/08/29/python-tricks-collection/" itemprop="url">Python tricks collection</a></h1>
-        
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/08/29/python-tricks-collection/" class="post-title-link" itemprop="url">Python tricks collection</a>
+        </h2>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
+              <span class="post-meta-item-text">Posted on</span>
               
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-08-29T20:49:40+08:00">
-                2020-08-29
-              </time>
-            
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2020-08-29 20:49:40 / Modified: 21:33:20" itemprop="dateCreated datePublished" datetime="2020-08-29T20:49:40+08:00">2020-08-29</time>
+            </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -298,121 +261,66 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
+          <p>Websites collection of powerful and well-explained python tricks</p>
+<h3 id="Decorators"><a href="#Decorators" class="headerlink" title="Decorators"></a>Decorators</h3><p><a target="_blank" rel="noopener" href="https://www.python-course.eu/python3_decorators.php#:~:text=A%20decorator%20in%20Python%20is,a%20modified%20function%20or%20class">https://www.python-course.eu/python3_decorators.php#:~:text=A%20decorator%20in%20Python%20is,a%20modified%20function%20or%20class</a>.</p>
+<h3 id="Classmethod-Decorator"><a href="#Classmethod-Decorator" class="headerlink" title="Classmethod Decorator"></a>Classmethod Decorator</h3><p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/classmethod-in-python/">https://www.geeksforgeeks.org/classmethod-in-python/</a></p>
 
-      
-        
-          
-            <p>Websites collection of powerful and well-explained python tricks</p>
-<h3 id="Decorators"><a href="#Decorators" class="headerlink" title="Decorators"></a>Decorators</h3><p><a href="https://www.python-course.eu/python3_decorators.php#:~:text=A%20decorator%20in%20Python%20is,a%20modified%20function%20or%20class" target="_blank" rel="noopener">https://www.python-course.eu/python3_decorators.php#:~:text=A%20decorator%20in%20Python%20is,a%20modified%20function%20or%20class</a>.</p>
-<h3 id="Classmethod-Decorator"><a href="#Classmethod-Decorator" class="headerlink" title="Classmethod Decorator"></a>Classmethod Decorator</h3><p><a href="https://www.geeksforgeeks.org/classmethod-in-python/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/classmethod-in-python/</a></p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
+  
+  
+  
 
-
-    
       
-
-  
-
   
   
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/27/markdown-cheat-sheet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhou Xinyu">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/themepicture.jpeg">
+      <meta itemprop="name" content="Zhou Xinyu">
+      <meta itemprop="description" content="A place for programming and for fun ~">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Hogwarts">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/08/27/markdown-cheat-sheet/" itemprop="url">Markdown Cheat Sheet</a></h1>
-        
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/08/27/markdown-cheat-sheet/" class="post-title-link" itemprop="url">Markdown Cheat Sheet</a>
+        </h2>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-08-27T10:51:08+08:00">
-                2020-08-27
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2020-08-27 10:51:08" itemprop="dateCreated datePublished" datetime="2020-08-27T10:51:08+08:00">2020-08-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-01-26 16:48:59" itemprop="dateModified" datetime="2021-01-26T16:48:59+08:00">2021-01-26</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -420,13 +328,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
-        
-          
-            <h1 id="Markdown-Cheat-Sheet"><a href="#Markdown-Cheat-Sheet" class="headerlink" title="Markdown Cheat Sheet"></a>Markdown Cheat Sheet</h1><p>Thanks for visiting <a href="https://www.markdownguide.org" target="_blank" rel="noopener">The Markdown Guide</a>!</p>
-<p>This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for <a href="https://www.markdownguide.org/basic-syntax" target="_blank" rel="noopener">basic syntax</a> and <a href="https://www.markdownguide.org/extended-syntax" target="_blank" rel="noopener">extended syntax</a>.</p>
+          <h1 id="Markdown-Cheat-Sheet"><a href="#Markdown-Cheat-Sheet" class="headerlink" title="Markdown Cheat Sheet"></a>Markdown Cheat Sheet</h1><p>Thanks for visiting <a target="_blank" rel="noopener" href="https://www.markdownguide.org/">The Markdown Guide</a>!</p>
+<p>This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for <a target="_blank" rel="noopener" href="https://www.markdownguide.org/basic-syntax">basic syntax</a> and <a target="_blank" rel="noopener" href="https://www.markdownguide.org/extended-syntax">extended syntax</a>.</p>
 <h2 id="Basic-Syntax"><a href="#Basic-Syntax" class="headerlink" title="Basic Syntax"></a>Basic Syntax</h2><p>These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.</p>
 <h3 id="Heading"><a href="#Heading" class="headerlink" title="Heading"></a>Heading</h3><h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h3 id="Bold"><a href="#Bold" class="headerlink" title="Bold"></a>Bold</h3><p><strong>bold text</strong></p>
 <h3 id="Italic"><a href="#Italic" class="headerlink" title="Italic"></a>Italic</h3><p><em>italicized text</em></p>
@@ -445,7 +348,7 @@
 </ul>
 <h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><p><code>code</code></p>
 <h3 id="Horizontal-Rule"><a href="#Horizontal-Rule" class="headerlink" title="Horizontal Rule"></a>Horizontal Rule</h3><hr>
-<h3 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h3><p><a href="https://www.example.com" target="_blank" rel="noopener">title</a></p>
+<h3 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h3><p><a target="_blank" rel="noopener" href="https://www.example.com/">title</a></p>
 <h3 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h3><p><img src="./posts_picture/loulou.jpg" alt="alt text"></p>
 <h2 id="Extended-Syntax"><a href="#Extended-Syntax" class="headerlink" title="Extended Syntax"></a>Extended Syntax</h2><p>These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.</p>
 <h3 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h3><table>
@@ -470,117 +373,67 @@
 <p>[^1]: This is the footnote.</p>
 <h3 id="Heading-ID"><a href="#Heading-ID" class="headerlink" title="Heading ID"></a>Heading ID</h3><h3 id="My-Great-Heading-35-custom-id"><a href="#My-Great-Heading-35-custom-id" class="headerlink" title="My Great Heading {&#35;custom-id}"></a>My Great Heading {&#35;custom-id}</h3><h3 id="Definition-List"><a href="#Definition-List" class="headerlink" title="Definition List"></a>Definition List</h3><dl><dt>term</dt><dd>definition</dd></dl><h3 id="Strikethrough"><a href="#Strikethrough" class="headerlink" title="Strikethrough"></a>Strikethrough</h3><p><del>The world is flat.</del></p>
 <h3 id="Task-List"><a href="#Task-List" class="headerlink" title="Task List"></a>Task List</h3><ul>
-<li><input checked disabled type="checkbox"> Write the press release</li>
-<li><input disabled type="checkbox"> Update the website</li>
-<li><input disabled type="checkbox"> Contact the media</li>
+<li><input checked="" disabled="" type="checkbox"> Write the press release</li>
+<li><input disabled="" type="checkbox"> Update the website</li>
+<li><input disabled="" type="checkbox"> Contact the media</li>
 </ul>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
+  
+  
+  
 
-
-    
       
-
-  
-
   
   
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/26/cpp-tricks-collection/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhou Xinyu">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/themepicture.jpeg">
+      <meta itemprop="name" content="Zhou Xinyu">
+      <meta itemprop="description" content="A place for programming and for fun ~">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Hogwarts">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/08/26/cpp-tricks-collection/" itemprop="url">C++ tricks collection</a></h1>
-        
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/08/26/cpp-tricks-collection/" class="post-title-link" itemprop="url">C++ tricks collection</a>
+        </h2>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-08-26T11:39:24+08:00">
-                2020-08-26
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2020-08-26 11:39:24" itemprop="dateCreated datePublished" datetime="2020-08-26T11:39:24+08:00">2020-08-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-29 21:33:25" itemprop="dateModified" datetime="2020-08-29T21:33:25+08:00">2020-08-29</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -588,125 +441,70 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
+          <p>Websites collection of C++ tricks that are easy to forget or seems confusing at the first sight:</p>
+<h3 id="Function-Pointer-return-type-func-ptr-name-input-type"><a href="#Function-Pointer-return-type-func-ptr-name-input-type" class="headerlink" title="Function Pointer (return type (*func ptr name)(input type))"></a>Function Pointer (return type (*func ptr name)(input type))</h3><p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/function-pointer-in-c/">https://www.geeksforgeeks.org/function-pointer-in-c/</a></p>
+<h3 id="Virtual-Functions-and-Mechanism-Runtime-Polymorphism"><a href="#Virtual-Functions-and-Mechanism-Runtime-Polymorphism" class="headerlink" title="Virtual Functions and Mechanism, Runtime Polymorphism"></a>Virtual Functions and Mechanism, Runtime Polymorphism</h3><p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/">https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/polymorphism-in-c/">https://www.geeksforgeeks.org/polymorphism-in-c/</a></p>
+<h3 id="Function-Object-Functor"><a href="#Function-Object-Functor" class="headerlink" title="Function Object/ Functor"></a>Function Object/ Functor</h3><p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/functors-in-cpp/">https://www.geeksforgeeks.org/functors-in-cpp/</a></p>
+<h3 id="Type-Inference-auto-decltype"><a href="#Type-Inference-auto-decltype" class="headerlink" title="Type Inference (auto, decltype)"></a>Type Inference (auto, decltype)</h3><p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/type-inference-in-c-auto-and-decltype/">https://www.geeksforgeeks.org/type-inference-in-c-auto-and-decltype/</a></p>
+<h3 id="Lambda-Expression"><a href="#Lambda-Expression" class="headerlink" title="Lambda Expression"></a>Lambda Expression</h3><p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/lambda-expression-in-c/">https://www.geeksforgeeks.org/lambda-expression-in-c/</a></p>
 
-      
-        
-          
-            <p>Websites collection of C++ tricks that are easy to forget or seems confusing at the first sight:</p>
-<h3 id="Function-Pointer-return-type-func-ptr-name-input-type"><a href="#Function-Pointer-return-type-func-ptr-name-input-type" class="headerlink" title="Function Pointer (return type (*func ptr name)(input type))"></a>Function Pointer (return type (*func ptr name)(input type))</h3><p><a href="https://www.geeksforgeeks.org/function-pointer-in-c/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/function-pointer-in-c/</a></p>
-<h3 id="Virtual-Functions-and-Mechanism-Runtime-Polymorphism"><a href="#Virtual-Functions-and-Mechanism-Runtime-Polymorphism" class="headerlink" title="Virtual Functions and Mechanism, Runtime Polymorphism"></a>Virtual Functions and Mechanism, Runtime Polymorphism</h3><p><a href="https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/</a></p>
-<p><a href="https://www.geeksforgeeks.org/polymorphism-in-c/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/polymorphism-in-c/</a></p>
-<h3 id="Function-Object-Functor"><a href="#Function-Object-Functor" class="headerlink" title="Function Object/ Functor"></a>Function Object/ Functor</h3><p><a href="https://www.geeksforgeeks.org/functors-in-cpp/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/functors-in-cpp/</a></p>
-<h3 id="Type-Inference-auto-decltype"><a href="#Type-Inference-auto-decltype" class="headerlink" title="Type Inference (auto, decltype)"></a>Type Inference (auto, decltype)</h3><p><a href="https://www.geeksforgeeks.org/type-inference-in-c-auto-and-decltype/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/type-inference-in-c-auto-and-decltype/</a></p>
-<h3 id="Lambda-Expression"><a href="#Lambda-Expression" class="headerlink" title="Lambda Expression"></a>Lambda Expression</h3><p><a href="https://www.geeksforgeeks.org/lambda-expression-in-c/" target="_blank" rel="noopener">https://www.geeksforgeeks.org/lambda-expression-in-c/</a></p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
+  
+  
+  
 
-
-    
       
-
-  
-
   
   
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/31/happy-new-year/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhou Xinyu">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/themepicture.jpeg">
+      <meta itemprop="name" content="Zhou Xinyu">
+      <meta itemprop="description" content="A place for programming and for fun ~">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Hogwarts">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/01/31/happy-new-year/" itemprop="url">Happy New Year</a></h1>
-        
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/31/happy-new-year/" class="post-title-link" itemprop="url">Happy New Year</a>
+        </h2>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-31T21:43:42+08:00">
-                2020-01-31
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2020-01-31 21:43:42" itemprop="dateCreated datePublished" datetime="2020-01-31T21:43:42+08:00">2020-01-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-26 11:35:59" itemprop="dateModified" datetime="2020-08-26T11:35:59+08:00">2020-08-26</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -714,119 +512,64 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
+          <h2 id="Happy-New-Year-to-Myself-and-Everyone"><a href="#Happy-New-Year-to-Myself-and-Everyone" class="headerlink" title="Happy New Year to Myself and Everyone"></a>Happy New Year to Myself and Everyone</h2><p>Year 2020 is quite unusual, it starts with loads of messy stuffs and annoying things. However, I still want to persuade myself that everything will be fine. I firmly believe that this coming new year can still be wonderful. I wish that I can make more friends and achieve goals. Hope that everything will be nice!!! (smile~)</p>
 
-      
-        
-          
-            <h2 id="Happy-New-Year-to-Myself-and-Everyone"><a href="#Happy-New-Year-to-Myself-and-Everyone" class="headerlink" title="Happy New Year to Myself and Everyone"></a>Happy New Year to Myself and Everyone</h2><p>Year 2020 is quite unusual, it starts with loads of messy stuffs and annoying things. However, I still want to persuade myself that everything will be fine. I firmly believe that this coming new year can still be wonderful. I wish that I can make more friends and achieve goals. Hope that everything will be nice!!! (smile~)</p>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
+  
+  
+  
 
-
-    
       
-
-  
-
   
   
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/25/hexo-post-instructions/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhou Xinyu">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/themepicture.jpeg">
+      <meta itemprop="name" content="Zhou Xinyu">
+      <meta itemprop="description" content="A place for programming and for fun ~">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Hogwarts">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/25/hexo-post-instructions/" itemprop="url">Hexo post instructions</a></h1>
-        
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/25/hexo-post-instructions/" class="post-title-link" itemprop="url">Hexo post instructions</a>
+        </h2>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-25T10:46:22+08:00">
-                2019-12-25
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2019-12-25 10:46:22" itemprop="dateCreated datePublished" datetime="2019-12-25T10:46:22+08:00">2019-12-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-26 11:36:17" itemprop="dateModified" datetime="2020-08-26T11:36:17+08:00">2020-08-26</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -834,16 +577,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
-        
-          
-            <h3 id="Go-to-the-correct-folder"><a href="#Go-to-the-correct-folder" class="headerlink" title="Go to the correct folder"></a>Go to the correct folder</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> hexo</span><br></pre></td></tr></table></figure>
+          <h3 id="Go-to-the-correct-folder"><a href="#Go-to-the-correct-folder" class="headerlink" title="Go to the correct folder"></a>Go to the correct folder</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> hexo</span><br></pre></td></tr></table></figure>
 
 <p>For example, as for macos operating system, I store all the hexo post information in the folder called <em>hexo</em>, so cd into that folder. When you enter the correct folder, the path name will show on the left side of the terminal. Here, it will display <code>hexo</code>.</p>
 <h3 id="Create-new-blogs"><a href="#Create-new-blogs" class="headerlink" title="Create new blogs"></a>Create new blogs</h3><p>Enter the following bash command</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"the name of the new blog"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;the name of the new blog&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="Find-and-edit-the-new-blog"><a href="#Find-and-edit-the-new-blog" class="headerlink" title="Find and edit the new blog"></a>Find and edit the new blog</h3><p>After that, open the <code>/username/root folder name/source/_posts</code>. More concretely, my absolute path is <code>/Users/zxy/hexo/source/_posts</code>. You will find a new markdown file named in <code>the name of the new blog.md</code></p>
 <p>Then, open this file in vscode, you can use various extension in vscode to help you to start writing your blog!</p>
@@ -856,114 +594,64 @@
 <h3 id="Push-to-github"><a href="#Push-to-github" class="headerlink" title="Push to github"></a>Push to github</h3><p>Enter the following to upload it to github. Finally ,you can see the new content in your github.io website.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<h5 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h5><p>Contents refer to<br><a href="https://sunhwee.com/posts/6e8839eb.html#toc-heading-14" target="_blank" rel="noopener">https://sunhwee.com/posts/6e8839eb.html#toc-heading-14</a></p>
+<h5 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h5><p>Contents refer to<br><a target="_blank" rel="noopener" href="https://sunhwee.com/posts/6e8839eb.html#toc-heading-14">https://sunhwee.com/posts/6e8839eb.html#toc-heading-14</a></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
+  
+  
+  
 
-
-    
       
-
-  
-
   
   
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/07/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhou Xinyu">
-      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/themepicture.jpeg">
+      <meta itemprop="name" content="Zhou Xinyu">
+      <meta itemprop="description" content="A place for programming and for fun ~">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Hogwarts">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/07/hello-world/" itemprop="url">Hello World</a></h1>
-        
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/07/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-07T18:44:22+08:00">
-                2019-09-07
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="Created: 2019-09-07 18:44:22" itemprop="dateCreated datePublished" datetime="2019-09-07T18:44:22+08:00">2019-09-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-26 11:39:00" itemprop="dateModified" datetime="2020-08-26T11:39:00+08:00">2020-08-26</time>
+              </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -971,328 +659,176 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">Deployment</a></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
+  
+  
+  
 
-
-    
-  </section>
 
   
+
 
 
           </div>
           
 
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="/images/themepicture.jpeg" alt="Zhou Xinyu">
-            
-              <p class="site-author-name" itemprop="name">Zhou Xinyu</p>
-              <p class="site-description motion-element" itemprop="description">A place for programming and for fun ~</p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">6</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">tags</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Zhou Xinyu</span>
-
-  
-</div>
-
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-          <span id="scrollpercent"><span>0</span>%</span>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
 
-
-
-
-
-
-
-
-
+        </div>
+          
   
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
 
+  <aside class="sidebar">
+    <div class="sidebar-inner">
 
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
 
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
 
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-<!-- LOCAL: You can save these files to your site and update links -->
-    
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Zhou Xinyu"
+      src="/images/themepicture.jpeg">
+  <p class="site-author-name" itemprop="name">Zhou Xinyu</p>
+  <div class="site-description" itemprop="description">A place for programming and for fun ~</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
         
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/CUHKSZzxy" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;CUHKSZzxy" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
 
-    
-
-    
 
 
+      </div>
 
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zhou Xinyu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
 
 
 
@@ -1303,16 +839,15 @@
 
 
 
-  
 
-  
 
-  
 
-  
-  
 
-  
+
+
+
+
+
 
   
 
