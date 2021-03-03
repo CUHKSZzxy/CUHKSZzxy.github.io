@@ -20,18 +20,22 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="The original terminal on the mac is difficult to use.  No auto complete No fancy theme support No syntax highlighting  But the iterm2 + zsh can solve all the above problems. https:&#x2F;&#x2F;sspai.com&#x2F;post&#x2F;632">
+  <meta name="description" content="Yesterday, I found an excellent terminal for teenagers called “fish”, however, it does not support several features of bash. Therefore, I decide to setup iterm2 + zsh for my convenience. The original">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Setup mac with iterm2 &amp; zsh">
 <meta property="og:url" content="http://yoursite.com/2021/03/03/setup-mac-with-iterm2-zsh/index.html">
 <meta property="og:site_name" content="Hogwarts">
-<meta property="og:description" content="The original terminal on the mac is difficult to use.  No auto complete No fancy theme support No syntax highlighting  But the iterm2 + zsh can solve all the above problems. https:&#x2F;&#x2F;sspai.com&#x2F;post&#x2F;632">
+<meta property="og:description" content="Yesterday, I found an excellent terminal for teenagers called “fish”, however, it does not support several features of bash. Therefore, I decide to setup iterm2 + zsh for my convenience. The original">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/terminal_original.png">
+<meta property="og:image" content="http://yoursite.com/images/terminal_now.png">
+<meta property="og:image" content="http://yoursite.com/images/auto_complete.png">
 <meta property="article:published_time" content="2021-03-03T04:00:00.000Z">
-<meta property="article:modified_time" content="2021-03-03T04:16:31.245Z">
+<meta property="article:modified_time" content="2021-03-03T06:20:54.502Z">
 <meta property="article:author" content="Zhou Xinyu">
 <meta property="article:tag" content="Technical">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/terminal_original.png">
 
 <link rel="canonical" href="http://yoursite.com/2021/03/03/setup-mac-with-iterm2-zsh/">
 
@@ -177,7 +181,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-03-03 12:00:00 / Modified: 12:16:31" itemprop="dateCreated datePublished" datetime="2021-03-03T12:00:00+08:00">2021-03-03</time>
+              <time title="Created: 2021-03-03 12:00:00 / Modified: 14:20:54" itemprop="dateCreated datePublished" datetime="2021-03-03T12:00:00+08:00">2021-03-03</time>
             </span>
 
           
@@ -191,14 +195,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>The original terminal on the mac is difficult to use.</p>
+        <p>Yesterday, I found an excellent terminal for teenagers called “fish”, however, it does not support several features of bash. Therefore, I decide to setup iterm2 + zsh for my convenience.</p>
+<p>The original terminal on the mac is difficult to use.</p>
 <ul>
 <li>No auto complete</li>
 <li>No fancy theme support</li>
 <li>No syntax highlighting</li>
 </ul>
 <p>But the iterm2 + zsh can solve all the above problems.</p>
+<p>This is my original terminal.<br><img src="/images/terminal_original.png" alt="original terminal"></p>
+<p>And after replacing the terminal of macos with iterm2, and installing zsh according to the following blog.</p>
 <p><a target="_blank" rel="noopener" href="https://sspai.com/post/63241">https://sspai.com/post/63241</a></p>
+<p>I change the theme and also the background color. Current item2 looks like this.</p>
+<p><img src="/images/terminal_now.png" alt="current terminal"></p>
+<p>The plugins that I selected:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins=(git zsh-syntax-highlighting zsh-autosuggestions)</span><br></pre></td></tr></table></figure>
+
+<p>With the help of autosuggestions, when you type in some characters in the terminal, zsh will automatically fill in the command.<br>You can simply press “=&gt;” to ensure the current command. Different types will be highlighted with various color.</p>
+<p><img src="/images/auto_complete.png" alt="auto fill"></p>
+<p>Although I install iterm2 + zsh about one year ago, how stupid I am that I did not find out the proper way to use it!</p>
+<p>Now, after experiencing it for a quite short period of time, I found out that every operation on the terminal is so smooth!</p>
+<p>Ohhhhh!</p>
 
     </div>
 
