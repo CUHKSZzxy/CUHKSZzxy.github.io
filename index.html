@@ -149,7 +149,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/03/21/tecent-written-exam/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/03/22/vscode-cpp-settings/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/themepicture.jpeg">
@@ -163,7 +163,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/03/21/tecent-written-exam/" class="post-title-link" itemprop="url">腾讯笔试</a>
+            <a href="/2021/03/22/vscode-cpp-settings/" class="post-title-link" itemprop="url">Set up VS Code to support C++11</a>
         </h2>
 
         <div class="post-meta">
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2021-03-21 22:57:28 / Modified: 23:06:48" itemprop="dateCreated datePublished" datetime="2021-03-21T22:57:28+08:00">2021-03-21</time>
+              <time title="Created: 2021-03-22 11:32:48 / Modified: 15:42:27" itemprop="dateCreated datePublished" datetime="2021-03-22T11:32:48+08:00">2021-03-22</time>
             </span>
 
           
@@ -188,17 +188,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>3.21 （腾讯笔试）<br>AC了一题，做的比较烂，mark一下，看是否有后续进展。</p>
-<p>总结一下就是</p>
-<ol>
-<li>首先就是C++的输入输出不够熟悉，导致在这方面花了不少冤枉的时间。</li>
-<li>拿到题目，首先还是应该拿纸和笔记录一下，用脑子空想的效率不够高。</li>
-<li>然后刷的算法题不够多，在拿到一道题目的时候脑子里面的匹配模型和算法不够多样。</li>
-<li>对于I/O的处理不够到位，对于比较大的数字，例如超出int范围的如何处理，这些需要学习一下。</li>
-<li>除此之外，因为这次和两位其他的同学一起预定了一个研讨室，期间有些干扰。下次尽量一个人安静地做笔试题。</li>
-</ol>
-<p>另外找到了一个比较好用的C++算法模板，记录如下。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;set&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unordered_map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fir first</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> se second</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pb push_back</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mp make_pair</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ull unsigned long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> cl(a, b) memset(a, b, sizeof(a))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> quickio(a) ios::sync_with_stdio(a)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> datatest() freopen(<span class="meta-string">&quot;data.in&quot;</span>, <span class="meta-string">&quot;r&quot;</span>, stdin)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> makeans() freopen(<span class="meta-string">&quot;data.out&quot;</span>, <span class="meta-string">&quot;w&quot;</span>, stdout)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> makedata() freopen(<span class="meta-string">&quot;data.in&quot;</span>, <span class="meta-string">&quot;w&quot;</span>, stdout)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pii pair<span class="meta-string">&lt;int, int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pll pair<span class="meta-string">&lt;ll, ll&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pdd pair<span class="meta-string">&lt;double, double&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxn = <span class="number">1e6</span> + <span class="number">10</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxm = <span class="number">1e6</span> + <span class="number">10</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> inf = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">const</span> ll mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> maxblock = <span class="built_in">sqrt</span>(maxn) + <span class="number">10</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">double</span> eps = <span class="number">1e-7</span>;</span><br><span class="line"><span class="keyword">const</span> ll INF = <span class="number">1e16</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+          <p>TODO</p>
+
       
     </div>
 
@@ -217,7 +208,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/03/19/sensetime-interview/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/03/21/tecent-intern-application/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/themepicture.jpeg">
@@ -231,7 +222,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/03/19/sensetime-interview/" class="post-title-link" itemprop="url">商汤面经</a>
+            <a href="/2021/03/21/tecent-intern-application/" class="post-title-link" itemprop="url">腾讯实习申请全纪录</a>
         </h2>
 
         <div class="post-meta">
@@ -240,10 +231,178 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-03-19 17:47:34 / Modified: 17:53:58" itemprop="dateCreated datePublished" datetime="2021-03-19T17:47:34+08:00">2021-03-19</time>
+              <time title="Created: 2021-03-21 22:57:28" itemprop="dateCreated datePublished" datetime="2021-03-21T22:57:28+08:00">2021-03-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-03-24 18:19:10" itemprop="dateModified" datetime="2021-03-24T18:19:10+08:00">2021-03-24</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>2021.3.21 （腾讯笔试）<br>AC了一题，做的比较烂，mark一下，看是否有后续进展。</p>
+<p>总结一下就是</p>
+<ol>
+<li>首先就是C++的输入输出不够熟悉，导致在这方面花了不少冤枉的时间。</li>
+<li>拿到题目，首先还是应该拿纸和笔记录一下，用脑子空想的效率不够高。</li>
+<li>然后刷的算法题不够多，在拿到一道题目的时候脑子里面的匹配模型和算法不够多样。</li>
+<li>对于I/O的处理不够到位，对于比较大的数字，例如超出int范围的如何处理，这些需要学习一下。</li>
+<li>除此之外，因为这次和两位其他的同学一起预定了一个研讨室，期间有些干扰。下次尽量一个人安静地做笔试题。</li>
+</ol>
+<p>另外找到了一个比较好用的C++算法模板，记录如下。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// #include &lt;algorithm&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;cmath&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;cstdio&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;cstdlib&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;cstring&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;ctime&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;iostream&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;map&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;queue&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;set&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;stack&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;unordered_map&gt;</span></span><br><span class="line"><span class="comment">// #include &lt;vector&gt;</span></span><br><span class="line"><span class="comment">// #define fir first</span></span><br><span class="line"><span class="comment">// #define se second</span></span><br><span class="line"><span class="comment">// #define ll long long</span></span><br><span class="line"><span class="comment">// #define pb push_back</span></span><br><span class="line"><span class="comment">// #define mp make_pair</span></span><br><span class="line"><span class="comment">// #define ull unsigned long long</span></span><br><span class="line"><span class="comment">// #define cl(a, b) memset(a, b, sizeof(a))</span></span><br><span class="line"><span class="comment">// #define quickio(a) ios::sync_with_stdio(a)</span></span><br><span class="line"><span class="comment">// #define datatest() freopen(&quot;data.in&quot;, &quot;r&quot;, stdin)</span></span><br><span class="line"><span class="comment">// #define makeans() freopen(&quot;data.out&quot;, &quot;w&quot;, stdout)</span></span><br><span class="line"><span class="comment">// #define makedata() freopen(&quot;data.in&quot;, &quot;w&quot;, stdout)</span></span><br><span class="line"><span class="comment">// #define pii pair&lt;int, int&gt;</span></span><br><span class="line"><span class="comment">// #define pll pair&lt;ll, ll&gt;</span></span><br><span class="line"><span class="comment">// #define pdd pair&lt;double, double&gt;</span></span><br><span class="line"><span class="comment">// using namespace std;</span></span><br><span class="line"><span class="comment">// const int maxn = 1e6 + 10;</span></span><br><span class="line"><span class="comment">// const int maxm = 1e6 + 10;</span></span><br><span class="line"><span class="comment">// const int inf = 0x3f3f3f3f;</span></span><br><span class="line"><span class="comment">// const ll mod = 1e9 + 7;</span></span><br><span class="line"><span class="comment">// const int maxblock = sqrt(maxn) + 10;</span></span><br><span class="line"><span class="comment">// const double eps = 1e-7;</span></span><br><span class="line"><span class="comment">// const ll INF = 1e16;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// int main() &#123;</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">//     return 0;</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p>2021.3.22（腾讯一面）<br>mark一下，考完期中考再写</p>
+<p>2021.3.24（终于考完期中考了，补一下面经）</p>
+<p>无自我介绍，直接做题</p>
+<blockquote>
+<p>第一题：给定一个二进制数组，里面包含0，1。寻找子区间的最长长度，要求子区间内含有的0，1数量相等</p>
+</blockquote>
+<p>略</p>
+<blockquote>
+<p>第二题：如何从rand_5生成rand_3，如何从rand_5生成rand_7</p>
+</blockquote>
+<p>略</p>
+<blockquote>
+<p>问：描述一下项目</p>
+</blockquote>
+<p>答：略</p>
+<blockquote>
+<p>问：项目难点有什么，怎么克服的？</p>
+</blockquote>
+<p>答：略</p>
+<blockquote>
+<p>问：项目的人员组成</p>
+</blockquote>
+<p>答：略</p>
+<blockquote>
+<p>问：怎么熟悉项目，一开始做的是什么？</p>
+</blockquote>
+<p>答：看论文，复现模型，训练；读代码，了解模型输入，中间步骤处理，输出；根据需求修改代码</p>
+<blockquote>
+<p>问：模型用的什么框架？tensorflow熟悉吗？</p>
+</blockquote>
+<p>答：基本都是用pytorch，tensorflow接触不太多。项目相关的SOTA都是基于pytorch<br>面试官表示基本不用tensorflow，是一件比较奇怪的事情</p>
+<blockquote>
+<p>问：平时用什么编程语言？</p>
+</blockquote>
+<p>答：C++和python</p>
+<blockquote>
+<p>问：哪个比较熟悉？</p>
+</blockquote>
+<p>答：C++</p>
+<blockquote>
+<p>问：C++的stl熟悉吗？</p>
+</blockquote>
+<p>答：能说上来一些</p>
+<blockquote>
+<p>问：那unordered_map和map有什么区别？为什么？</p>
+</blockquote>
+<p>答：unordered_map根据key找value比较快。具体不清楚，和底层实现有关。</p>
+<blockquote>
+<p>问：map底层实现是什么？</p>
+</blockquote>
+<p>答：红黑树</p>
+<blockquote>
+<p>问：为什么叫红黑树？</p>
+</blockquote>
+<p>答：有两种不同的节点，需要不同的处理，所以叫红黑树</p>
+<blockquote>
+<p>问：为什么不可以用普通的树，二叉树不行吗？</p>
+</blockquote>
+<p>答：如果用普通的树，会导致树的深度不平衡，时间复杂度增大</p>
+<blockquote>
+<p>问：如果是不平衡的情况，那时间复杂度会变成什么？</p>
+</blockquote>
+<p>答：不太确定，n^2？</p>
+<blockquote>
+<p>问：基础的学科都学了吗？操作系统，数据结构，计算机网络，其中哪个比较熟悉？</p>
+</blockquote>
+<p>答：学了操作系统，数据结构，计算机网络。操作系统比较熟悉。（网络没学，哎，还好没问我</p>
+<blockquote>
+<p>问：什么是LRU</p>
+</blockquote>
+<p>答：least recent used算法。内存管理中，内存被分割成为一个个page来处理，需要page置换是，least recent used page会被找出来替换出去。</p>
+<blockquote>
+<p>问：为什么要这样做呢？</p>
+</blockquote>
+<p>答：这是因为virtual memory（虚拟内存）的设计。这种设计可以让比如64kb的程序运行在32kb内存的电脑上。</p>
+<blockquote>
+<p>问：是哪里人，在哪读书，现在在哪个城市，是否参加过内陆高考（面试官以为我在香港读书），学校录取名次和分数线，能实习多长时间</p>
+</blockquote>
+<p>答：略</p>
+<blockquote>
+<p>问：还有其他要问我的吗？</p>
+</blockquote>
+<p>答：请问部分主要负责的业务是什么，实习生可能会做哪些部分？</p>
+<p>答：腾讯云深度学习框架的构建和支持，为模型提供云上的加速服务。<br>实习生可能会负责运用一些模型，做一些小的应用，可能会实现腾讯云的一些小组件</p>
+<p>面试总时长：80分钟<br>体验：面试官比较耐心，给了充足时间做简单的两道编程题，后续问题也不算很难。<br>不过似乎对于我所做的项目所在领域不是很熟悉，问的比较宽泛。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/03/19/sensetime-intern-application/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/themepicture.jpeg">
+      <meta itemprop="name" content="Zhou Xinyu">
+      <meta itemprop="description" content="A place for programming and for fun ~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hogwarts">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/19/sensetime-intern-application/" class="post-title-link" itemprop="url">商汤实习申请全纪录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-03-19 17:47:34" itemprop="dateCreated datePublished" datetime="2021-03-19T17:47:34+08:00">2021-03-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-03-24 18:18:02" itemprop="dateModified" datetime="2021-03-24T18:18:02+08:00">2021-03-24</time>
+              </span>
 
           
 
@@ -260,6 +419,7 @@
 <p>2021.3.17（HR通知面试，简历已内推通过）</p>
 <p>2021.3.18（一面）</p>
 <p>2021.3.19（一面已过）<br>最近忙，过几天再更面经。记录一下面试流程，反思自己有哪些还没有掌握的东西。</p>
+<p>2021.3.24（期中考完了，补上一面面经）</p>
 
       
     </div>
@@ -843,77 +1003,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/26/cpp-tricks-collection/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/themepicture.jpeg">
-      <meta itemprop="name" content="Zhou Xinyu">
-      <meta itemprop="description" content="A place for programming and for fun ~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hogwarts">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/26/cpp-tricks-collection/" class="post-title-link" itemprop="url">C++ tricks collection</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-08-26 11:39:24" itemprop="dateCreated datePublished" datetime="2020-08-26T11:39:24+08:00">2020-08-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-29 21:33:25" itemprop="dateModified" datetime="2020-08-29T21:33:25+08:00">2020-08-29</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Websites collection of C++ tricks that are easy to forget or seems confusing at the first sight:</p>
-<h3 id="Function-Pointer-return-type-func-ptr-name-input-type"><a href="#Function-Pointer-return-type-func-ptr-name-input-type" class="headerlink" title="Function Pointer (return type (*func ptr name)(input type))"></a>Function Pointer (return type (*func ptr name)(input type))</h3><p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/function-pointer-in-c/">https://www.geeksforgeeks.org/function-pointer-in-c/</a></p>
-<h3 id="Virtual-Functions-and-Mechanism-Runtime-Polymorphism"><a href="#Virtual-Functions-and-Mechanism-Runtime-Polymorphism" class="headerlink" title="Virtual Functions and Mechanism, Runtime Polymorphism"></a>Virtual Functions and Mechanism, Runtime Polymorphism</h3><p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/">https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/polymorphism-in-c/">https://www.geeksforgeeks.org/polymorphism-in-c/</a></p>
-<h3 id="Function-Object-Functor"><a href="#Function-Object-Functor" class="headerlink" title="Function Object/ Functor"></a>Function Object/ Functor</h3><p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/functors-in-cpp/">https://www.geeksforgeeks.org/functors-in-cpp/</a></p>
-<h3 id="Type-Inference-auto-decltype"><a href="#Type-Inference-auto-decltype" class="headerlink" title="Type Inference (auto, decltype)"></a>Type Inference (auto, decltype)</h3><p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/type-inference-in-c-auto-and-decltype/">https://www.geeksforgeeks.org/type-inference-in-c-auto-and-decltype/</a></p>
-<h3 id="Lambda-Expression"><a href="#Lambda-Expression" class="headerlink" title="Lambda Expression"></a>Lambda Expression</h3><p><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/lambda-expression-in-c/">https://www.geeksforgeeks.org/lambda-expression-in-c/</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -985,7 +1074,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
