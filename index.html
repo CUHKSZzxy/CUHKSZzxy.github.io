@@ -401,7 +401,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-03-24 18:18:02" itemprop="dateModified" datetime="2021-03-24T18:18:02+08:00">2021-03-24</time>
+                <time title="Modified: 2021-03-24 18:28:17" itemprop="dateModified" datetime="2021-03-24T18:28:17+08:00">2021-03-24</time>
               </span>
 
           
@@ -420,6 +420,133 @@
 <p>2021.3.18（一面）</p>
 <p>2021.3.19（一面已过）<br>最近忙，过几天再更面经。记录一下面试流程，反思自己有哪些还没有掌握的东西。</p>
 <p>2021.3.24（期中考完了，补上一面面经）</p>
+<p>自我介绍<br>介绍经历和项目</p>
+<blockquote>
+<p>问：简历上面的项目，经历细节</p>
+</blockquote>
+<p>巴拉巴拉巴拉巴拉很多细节问题，千万要搞懂自己写在简历上的<br>（答的不是太好，有几个面试官感兴趣的店没有答上来，哎</p>
+<blockquote>
+<p>问：接下来考一些基础知识吧，机器学习常用的损失函数？</p>
+</blockquote>
+<p>Triplet loss, cross etropy loss</p>
+<blockquote>
+<p>问：BN（Batch normalization）听说过吗？为什么要用BN？</p>
+</blockquote>
+<p>听说过，是为了防止梯度消失的问题。BN</p>
+<blockquote>
+<p>问：BN是怎么实现的呢？简单描述一下</p>
+</blockquote>
+<p>在channel维度取mean，variance，然后x = x – mean / sqrt(variance)</p>
+<blockquote>
+<p>问：听过instance normalization吗？和BN有什么区别，各自的优缺点和适用场景？</p>
+</blockquote>
+<p>IN是在spatial dimension上面normalize，BN是在channel维度normalize<br>优缺点，不知道（卒</p>
+<blockquote>
+<p>问：常用的Backbone Network？</p>
+</blockquote>
+<p>ResNet50，VGG</p>
+<blockquote>
+<p>问：你提到了ResNet，ResNet的构造是怎么样的，有什么特别之处？</p>
+</blockquote>
+<p>层数比一般的神经网络深，有skip connection等的残差权值连接，来防止深层网络过拟合</p>
+<blockquote>
+<p>问：深层的神经网络有什么方法来防止过拟合吗？</p>
+</blockquote>
+<p>BN，dropout</p>
+<blockquote>
+<p>问：你之前提到了BN是为了防止梯度过小，那你觉得是深层神经网络容易出现梯度过小问题，还是浅层的呢？</p>
+</blockquote>
+<p>我觉得是要取决与参数的初始化，如果初始化的参数很小，有可能在浅层网络就已经梯度过小了</p>
+<blockquote>
+<p>问：dropout大致是怎么样的，怎么实现的？</p>
+</blockquote>
+<p>在训练过程中，为了使得每次迭代训练到的都是不同的模型，随机丢弃一些神经元的权值</p>
+<blockquote>
+<p>问：那么随机丢弃之后，还需要进行什么额外处理呢？</p>
+</blockquote>
+<p>不太懂。。。<br>（面试官补充说明，drop之后为了使得training的过程中保持一致性，需要怎么处理？）<br>还是不会（卒</p>
+<blockquote>
+<p>问：给定一个矩阵 A (mxn)，乘以他的转置 A^T (nxm)，得到的矩阵维度？是什么矩阵</p>
+</blockquote>
+<p>mxm<br>正定矩阵</p>
+<blockquote>
+<p>问：这个矩阵乘法的复杂度是多少？</p>
+</blockquote>
+<p>m * m * n</p>
+<blockquote>
+<p>问：你是计算机专业的吗？那考一下C++吧，C++指针和引用的区别？</p>
+</blockquote>
+<p>（瞎扯）引用是指针之后发明出来的，写起来更简洁，巴拉巴拉<br>不会（卒</p>
+<blockquote>
+<p>问：那好吧，那指针是什么？</p>
+</blockquote>
+<p>指向某一内存地址的变量</p>
+<blockquote>
+<p>问：考一下常见排序算法吧，有哪些常见排序算法？</p>
+</blockquote>
+<p>冒泡排序，归并排序，快速排序，堆排序，插入排序</p>
+<blockquote>
+<p>问：比较一下归并排序和快速排序，优缺点</p>
+</blockquote>
+<p>归并排序时间复杂度O(nlog(n))，有可能会造成栈的溢出<br>快排平均时间复杂度O(nlog(n))，但是最坏情况O(n^2)，绝大多数时候比较快</p>
+<blockquote>
+<p>问：那归并排序栈的深度是多少？</p>
+</blockquote>
+<p>log(n)</p>
+<blockquote>
+<p>问：那这个log(n)相对来说很小啊，是不是不需要关注栈溢出了？</p>
+</blockquote>
+<p>（瞎扯）我听说过有一种实现是叫尾递归，可以避免栈的溢出，但是具体细节不太清楚<br>（面试官听了就pass了这个问题，不知道我自己答案对不对）</p>
+<blockquote>
+<p>问：那快速排序有什么方法能够避免出现最坏时间复杂度吗？</p>
+</blockquote>
+<p>（瞎扯）因为快速排序的最坏时间复杂度是特定输入的情况下才会出现，所以处理一下输入就行了</p>
+<blockquote>
+<p>问：怎么处理？</p>
+</blockquote>
+<p>Random一下输入<br>面试官：比较有趣的想法，但是这不能保证最坏情况不出现，你可以之后自己去了解一下</p>
+<blockquote>
+<p>问：做一些题吧，不会很难，都是很简单的。打开一个编辑器，写代码。还问我好几次准备好了吗？</p>
+</blockquote>
+<p>题目一<br>问：有过去6天的股票价格，如下这个数组。当然你是事后诸葛亮，你可以任意选一天买入，选一天卖出，怎么样达到最大利润。你可以说说看思路</p>
+<p>int prices[6] = {7,1,5,3,6,4}</p>
+<p>我：最大子区间和？（无语，当时真是脑子抽风了</p>
+<p>面试官：不对，你只可以选一天买入，一天卖出<br>我：有个时间复杂度比较高的想法，loop每一天的，loop这一天之后的，算这一天买入，后面几天卖出利润，然后取最大。</p>
+<p>面试官：可以的，那为什么不反过来呢？你既然现在知道了所有的信息，给定一天，假如这一天卖出，那么你应该选择之前哪一天的买入呢？<br>我：前几天内最地价格就是应该买入的那一天</p>
+<p>面试官：嗯嗯，那你先写下来吧（原意应该是让我先写我自己那个想法的</p>
+<p>然后不知道几分钟，大概写了5分钟，写了两种思路的。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">obtain_max_profit</span><span class="params">(<span class="keyword">int</span> a[])</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> days = <span class="number">6</span>;</span><br><span class="line">  <span class="keyword">int</span> purchase_in = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">int</span> sell_out = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">int</span> previous_min = a[<span class="number">0</span>];</span><br><span class="line">  <span class="keyword">int</span> max_profit = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; days; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (a[i] &lt; previous_min) &#123;</span><br><span class="line">      previous_min = a[i];</span><br><span class="line">      purchase_in = i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (max_profit &lt; (a[i] - previous_min)) &#123;</span><br><span class="line">      max_profit = a[i] - previous_min;</span><br><span class="line">      sell_out = i;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;in %d, out %d, max pro %d\n&quot;</span>, purchase_in, sell_out, max_profit);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">// price of previous</span></span><br><span class="line">  <span class="keyword">int</span> days = <span class="number">6</span>;</span><br><span class="line">  <span class="keyword">int</span> a[<span class="number">6</span>] = &#123;<span class="number">7</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">4</span>&#125;;</span><br><span class="line">  <span class="keyword">int</span> purchase_in, sell_out;</span><br><span class="line">  purchase_in = <span class="number">0</span>;</span><br><span class="line">  sell_out = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// method1</span></span><br><span class="line">  <span class="keyword">int</span> max_profit = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; days - <span class="number">1</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; days; j++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (max_profit &lt; (a[j] - a[i])) &#123;</span><br><span class="line">        purchase_in = i;</span><br><span class="line">        sell_out = j;</span><br><span class="line">        max_profit = a[j] - a[i];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;in %d, out %d, max pro %d\n&quot;</span>, purchase_in, sell_out, max_profit);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// method2</span></span><br><span class="line">  obtain_max_profit(a);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// n numbers</span></span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我：面试官，写好了<br>面试官：为什么写了两种？<br>我：第一种是我最开始的想法，时间复杂度比较高。第二种是经过你提醒，写的时间复杂度比较低的。（这里面试官应该没有在全程看你写代码，所以我写了之后运行好了，print出结果，验证正确之后再叫的面试官来查看<br>面试官：嗯嗯，那应该没什么问题</p>
+<p>（这题真的非常非常非常基础了，居然还想不到好方法，卒。索性写出来了，不然聊不下去了。。。）</p>
+<p>题目二，不需要编程，说一下思路</p>
+<blockquote>
+<p>问：给n个数，找最大k个</p>
+</blockquote>
+<p>简单的想法，排序，然后取出最大k个。其他的话，可以构造一颗树（其实不会</p>
+<blockquote>
+<p>问：什么树呢？名字叫什么？<br>Winner tree？</p>
+</blockquote>
+<blockquote>
+<p>面试官：不是，没有那么复杂，heap可以吗？<br>我：可以的</p>
+</blockquote>
+<blockquote>
+<p>问：那要构造什么heap呢，要怎么用呢？<br>（不会，在思考。大脑一片空白。学过，但是怎么都想不起来，准备太仓促了，哎</p>
+</blockquote>
+<p>思考到一半，面试官说算了吧算了吧，我们再考点其他的。<br>过了一会，算了，我想不出其他题目了，你有什么想问我的吗？</p>
+<p>我？？？？<br>反问：企业工作研究和学校里面学习有什么不同？<br>差不多，但是会更服务于产品，如果有很好的一个想法，但是和产品需求不同，可能就会搁置这个想法<br>反问：日常的开发工作是怎么样的，什么流程？<br>反问：实习生具体会做一些什么工作呢？<br>创新研究<br>反问：业务组的主要工作是什么领域的？</p>
+<p>我没有其他问题了。</p>
+<blockquote>
+<p>问：什么时候能够入职？最长实习时间？</p>
+</blockquote>
+<p>6月初，3个月可以保证，听到商汤HR说需要6个月，如果能够有幸拿到offer，6个月也是可以安排的。</p>
+<blockquote>
+<p>问：最早6月初才能来是吗？是还在上学对吗？6月份刚刚期末考完？</p>
+</blockquote>
+<p>是的，6月初才能来，还在上学，6月左右完成期末考试</p>
+<p>那就这样，感谢面试，拜拜</p>
+<p>拜拜</p>
+<p>面试时间：70分钟<br>总体来说，比我想象的要简单一些，不懂的面试官会引导你，编程的时候因为对面有杂音，面试官还主动把自己的麦关了让我思考写代码。</p>
 
       
     </div>
